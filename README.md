@@ -9,7 +9,7 @@ Select your favorite footbal competition
 
 See the current standings 
 
-![Table screen](images/table.png)
+![Table screen](images/tables.png)
 
 Select a team from the table to view the team details
 
