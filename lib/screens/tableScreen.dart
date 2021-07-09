@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:http/http.dart' as http;
 import 'package:sports_api/screens/clubScreen.dart';
 import 'package:flutter_config/flutter_config.dart';
+import 'package:sports_api/screens/test_screen.dart';
 
 
 class TableScreen extends StatefulWidget {
@@ -50,10 +51,8 @@ class _TableScreenState extends State<TableScreen> {
                     GestureDetector(
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => ClubScreen(),
-
+                          builder: (context) => ClubScreen(team['team']['name']),
                         ));
-
                       },
                       child: Row(
                         children: [
