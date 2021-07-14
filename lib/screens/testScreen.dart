@@ -121,12 +121,12 @@ class _ClubScreenState extends State<ClubScreen> {
       ),
     )
         : Scaffold(
-        appBar: AppBar(
-          title: Text('Team Details'),
-          centerTitle: true,
-          backgroundColor: Color(0xff33ccff),
-          elevation: 50.0,
-        ),
+      appBar: AppBar(
+        title: Text('Team Details'),
+        centerTitle: true,
+        backgroundColor: Color(0xff33ccff),
+        elevation: 50.0,
+      ),
       body: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -148,10 +148,10 @@ class _ClubScreenState extends State<ClubScreen> {
 
               Text('you are in $position'),
               //SizedBox(height: 10.0),
-             // SvgPicture.network(
-               // team['team']['crestUrl'],
-               // height: 30,
-               // width: 30,
+              // SvgPicture.network(
+              // team['team']['crestUrl'],
+              // height: 30,
+              // width: 30,
               //),
 
             ],

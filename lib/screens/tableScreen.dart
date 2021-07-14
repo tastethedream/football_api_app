@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:http/http.dart' as http;
-import 'package:sports_api/screens/clubScreen.dart';
 import 'package:flutter_config/flutter_config.dart';
-import 'package:sports_api/screens/test_screen.dart';
+import 'package:sports_api/screens/clubScreen.dart';
+import 'package:sports_api/screens/teamScreen.dart';
 
 
 class TableScreen extends StatefulWidget {
@@ -28,11 +28,7 @@ class _TableScreenState extends State<TableScreen> {
     setState(() {
       _table = table;
     });
-
-
   }
-
-
 
   Widget buildTable() {
     List<Widget> teams = [];
@@ -51,8 +47,12 @@ class _TableScreenState extends State<TableScreen> {
                     GestureDetector(
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => ClubScreen(team['team']['name']),
+                          builder: (context) => TeamScreen(team['team']['name'], team['team']['id']),
+                          //builder: (context) => TeamScreen(team['team']['id'], team['team']['name']),
                         ));
+                        //print(_table.team.id);
+                        print(team['team']['id']);
+                        print(team['team']['name']);
                       },
                       child: Row(
                         children: [
