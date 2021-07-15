@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_config/flutter_config.dart';
 import 'package:sports_api/screens/clubScreen.dart';
 import 'package:sports_api/screens/teamScreen.dart';
+import 'package:sports_api/screens/testScreen.dart';
 
 
 class TableScreen extends StatefulWidget {
@@ -48,7 +49,6 @@ class _TableScreenState extends State<TableScreen> {
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) => TeamScreen(team['team']['name'], team['team']['id']),
-                          //builder: (context) => TeamScreen(team['team']['id'], team['team']['name']),
                         ));
                         //print(_table.team.id);
                         print(team['team']['id']);
