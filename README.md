@@ -13,4 +13,4 @@ See the current standings
 
 Select a team from the table to view the team details
 
-![ Detail Screen](images/detail.png)  
+![ Detail Screen](images/details.png)  
